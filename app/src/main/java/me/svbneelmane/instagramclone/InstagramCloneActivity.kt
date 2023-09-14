@@ -22,7 +22,7 @@ import me.svbneelmane.instagramclone.ui.theme.InstagramCloneTheme
 import me.svbneelmane.instagramclone.viewmodels.InstaViewModel
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class InstagramCloneActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
