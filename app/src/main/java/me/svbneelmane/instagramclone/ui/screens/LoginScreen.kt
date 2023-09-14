@@ -27,12 +27,12 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import me.svbneelmane.instagramclone.DestinationScreen
-import me.svbneelmane.instagramclone.viewmodels.InstaViewModel
 import me.svbneelmane.instagramclone.R
+import me.svbneelmane.instagramclone.core.nav.DestinationScreen
 import me.svbneelmane.instagramclone.core.utils.CustomSpinner
 import me.svbneelmane.instagramclone.core.utils.CustomTextField
 import me.svbneelmane.instagramclone.core.utils.navigateTo
+import me.svbneelmane.instagramclone.viewmodels.InstaViewModel
 
 @Composable
 fun LoginScreen(
