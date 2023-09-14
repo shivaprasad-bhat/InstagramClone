@@ -37,12 +37,10 @@ class InstaViewModel @Inject constructor(
 
     fun onSignup(userName: String, email: String, password: String) {
         inProgress.value = true
-
         db.collection(USERS).whereEqualTo("userName", userName).get()
             .addOnSuccessListener { document ->
                 if (document.size() > 0) {
                     handleException(customMessage = "User Name Already Exists")
-                    inProgress.value = false
                 } else {
                     auth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener { task ->
@@ -55,12 +53,13 @@ class InstaViewModel @Inject constructor(
                                     customMessage = "Signup failed"
                                 )
                             }
-                            inProgress.value = false
                         }
                 }
+
+                inProgress.value = false
             }
             .addOnFailureListener {
-
+                inProgress.value = false
             }
     }
 
