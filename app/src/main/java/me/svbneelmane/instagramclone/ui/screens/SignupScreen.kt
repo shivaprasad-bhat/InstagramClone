@@ -1,4 +1,4 @@
-package me.svbneelmane.instagramclone.auth
+package me.svbneelmane.instagramclone.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -13,10 +13,8 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -25,19 +23,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
-import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import me.svbneelmane.instagramclone.DestinationScreen
-import me.svbneelmane.instagramclone.InstaViewModel
+import me.svbneelmane.instagramclone.viewmodels.InstaViewModel
 import me.svbneelmane.instagramclone.R
-import me.svbneelmane.instagramclone.main.CustomSpinner
-import me.svbneelmane.instagramclone.main.CustomTextField
-import me.svbneelmane.instagramclone.main.navigateTo
+import me.svbneelmane.instagramclone.core.utils.CustomSpinner
+import me.svbneelmane.instagramclone.core.utils.CustomTextField
+import me.svbneelmane.instagramclone.core.utils.navigateTo
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

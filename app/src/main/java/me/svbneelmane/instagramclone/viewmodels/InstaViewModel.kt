@@ -1,4 +1,4 @@
-package me.svbneelmane.instagramclone
+package me.svbneelmane.instagramclone.viewmodels
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -7,8 +7,8 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.storage.FirebaseStorage
 import dagger.hilt.android.lifecycle.HiltViewModel
-import me.svbneelmane.instagramclone.data.Event
-import me.svbneelmane.instagramclone.data.UserData
+import me.svbneelmane.instagramclone.core.data.Event
+import me.svbneelmane.instagramclone.core.data.UserData
 import java.lang.Exception
 import javax.inject.Inject
 

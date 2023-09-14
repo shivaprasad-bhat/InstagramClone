@@ -1,4 +1,4 @@
-package me.svbneelmane.instagramclone
+package me.svbneelmane.instagramclone.core.services
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

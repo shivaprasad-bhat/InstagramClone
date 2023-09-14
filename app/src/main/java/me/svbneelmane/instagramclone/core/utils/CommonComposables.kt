@@ -1,4 +1,4 @@
-package me.svbneelmane.instagramclone.main
+package me.svbneelmane.instagramclone.core.utils
 
 import android.widget.Toast
 import androidx.compose.foundation.background
@@ -22,9 +22,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
-import me.svbneelmane.instagramclone.DestinationScreen
-import me.svbneelmane.instagramclone.InstaViewModel
+import me.svbneelmane.instagramclone.viewmodels.InstaViewModel
 
 @Composable
 fun NotificationMessage(viewModel: InstaViewModel) {
@@ -70,12 +68,4 @@ fun CustomTextField(
         },
         visualTransformation = if (isPasswordField) PasswordVisualTransformation() else VisualTransformation.None
     )
-}
-
-fun navigateTo(navController: NavController, destination: DestinationScreen) {
-    navController.navigate(destination.route) {
-        popUpTo(destination.route)
-        launchSingleTop = true
-    }
-
 }

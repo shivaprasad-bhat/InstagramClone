@@ -1,4 +1,4 @@
-package me.svbneelmane.instagramclone.auth
+package me.svbneelmane.instagramclone.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -28,11 +28,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import me.svbneelmane.instagramclone.DestinationScreen
-import me.svbneelmane.instagramclone.InstaViewModel
+import me.svbneelmane.instagramclone.viewmodels.InstaViewModel
 import me.svbneelmane.instagramclone.R
-import me.svbneelmane.instagramclone.main.CustomSpinner
-import me.svbneelmane.instagramclone.main.CustomTextField
-import me.svbneelmane.instagramclone.main.navigateTo
+import me.svbneelmane.instagramclone.core.utils.CustomSpinner
+import me.svbneelmane.instagramclone.core.utils.CustomTextField
+import me.svbneelmane.instagramclone.core.utils.navigateTo
 
 @Composable
 fun LoginScreen(

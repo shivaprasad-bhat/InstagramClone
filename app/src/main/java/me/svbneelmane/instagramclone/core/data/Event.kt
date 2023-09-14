@@ -1,4 +1,4 @@
-package me.svbneelmane.instagramclone.data
+package me.svbneelmane.instagramclone.core.data
 
 open class Event<out T>(private val content: T) {
 

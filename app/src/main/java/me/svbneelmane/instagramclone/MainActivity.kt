@@ -6,7 +6,6 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -15,10 +14,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
-import me.svbneelmane.instagramclone.auth.LoginScreen
-import me.svbneelmane.instagramclone.auth.SignupScreen
-import me.svbneelmane.instagramclone.main.NotificationMessage
+import me.svbneelmane.instagramclone.ui.screens.LoginScreen
+import me.svbneelmane.instagramclone.ui.screens.SignupScreen
+import me.svbneelmane.instagramclone.core.utils.NotificationMessage
 import me.svbneelmane.instagramclone.ui.theme.InstagramCloneTheme
+import me.svbneelmane.instagramclone.viewmodels.InstaViewModel
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

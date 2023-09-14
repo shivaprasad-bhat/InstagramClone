@@ -1,4 +1,4 @@
-package me.svbneelmane.instagramclone.data
+package me.svbneelmane.instagramclone.core.data
 
 data class UserData(
     var userId: String? = null,
